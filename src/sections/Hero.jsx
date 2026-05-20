@@ -20,7 +20,7 @@ export default function Hero() {
         <img
           src={hero.heroMobile}
           alt="Jeevan Yatra Travels - Premium Cab Service"
-          className="block md:hidden w-full h-full object-contain object-center"
+          className="block md:hidden w-full h-full object-cover object-center"
           loading="eager"
         />
       </div>
