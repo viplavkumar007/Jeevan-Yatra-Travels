@@ -10,7 +10,7 @@ export default function Hero() {
       className="relative min-h-[110vh] flex items-center overflow-hidden pt-8 sm:pt-10"
       aria-label="Hero section"
     >
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-white">
         <img
           src={hero.heroDesktop}
           alt="Jeevan Yatra Travels - Premium Cab Service"
@@ -20,7 +20,7 @@ export default function Hero() {
         <img
           src={hero.heroMobile}
           alt="Jeevan Yatra Travels - Premium Cab Service"
-          className="block md:hidden w-full h-full object-cover object-top"
+          className="block md:hidden w-full h-full object-contain object-center"
           loading="eager"
         />
       </div>
@@ -30,7 +30,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex flex-wrap justify-start gap-1.5"
+          className="absolute left-4 bottom-[24rem] flex flex-wrap justify-start gap-1.5 md:static"
         >
           <motion.a
             href={waLink}
