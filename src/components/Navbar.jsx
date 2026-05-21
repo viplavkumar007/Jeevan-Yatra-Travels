@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { label: 'About', href: '#about' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'T&C', href: '#terms' },
   { label: 'Contact', href: '#contact' },
 ]
 
@@ -39,7 +40,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-navy-100 shadow-sm">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-navy-100 bg-white shadow-sm">
       <motion.nav
         initial={{ y: -80 }}
         animate={{ y: 0 }}
@@ -57,8 +58,8 @@ export default function Navbar() {
               className="flex items-center gap-3 group"
               whileHover={{ scale: 1.02 }}
             >
-              <div className="w-12 h-12 rounded-full overflow-hidden ring-2 ring-navy-600/20 shadow-md group-hover:ring-navy-600/50 transition-all duration-300">
-                <img src={brand.logo} alt="Jeevan Yatra Travels Logo" className="w-full h-full object-cover" />
+              <div className="h-11 w-32 overflow-hidden rounded-2xl bg-white px-0 py-0 ring-2 ring-navy-600/20 shadow-md group-hover:ring-navy-600/50 transition-all duration-300 sm:h-12 sm:w-40">
+                <img src={brand.logo} alt="Jeevan Yatra Travels Logo" className="w-full h-full scale-[1.38] object-contain object-center" />
               </div>
               <div className="hidden sm:block">
                 <div className="font-display font-900 text-sm leading-tight text-navy-600 transition-colors duration-300">

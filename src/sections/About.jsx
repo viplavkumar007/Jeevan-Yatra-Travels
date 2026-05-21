@@ -100,10 +100,10 @@ export default function About() {
             <motion.div
               variants={fadeUp}
               custom={4}
-              className="col-span-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex items-center gap-4"
+              className="col-span-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-6 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
             >
-              <div className="w-16 h-16 rounded-full overflow-hidden ring-2 ring-green-400/50 flex-shrink-0">
-                <img src={brand.logo} alt="Jeevan Yatra Travels" className="w-full h-full object-cover" />
+              <div className="h-12 w-36 overflow-hidden rounded-2xl bg-white px-0 py-0 ring-2 ring-green-400/50 flex-shrink-0 sm:h-16 sm:w-48">
+                <img src={brand.logo} alt="Jeevan Yatra Travels" className="w-full h-full scale-[1.38] object-contain object-center" />
               </div>
               <div>
                 <div className="font-display font-800 text-white text-lg">

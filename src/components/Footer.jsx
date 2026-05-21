@@ -7,8 +7,17 @@ const footerLinks = [
   { label: 'About Us', href: '#about' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'FAQ', href: '#faq' },
+  { label: 'T&C', href: '#terms' },
   { label: 'Contact', href: '#contact' },
 ]
+
+function InstagramIcon() {
+  return (
+    <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.25-2.38a1.13 1.13 0 1 1 0 2.26 1.13 1.13 0 0 1 0-2.26Z" />
+    </svg>
+  )
+}
 
 export default function Footer() {
   const year = new Date().getFullYear()
@@ -22,11 +31,10 @@ export default function Footer() {
     <footer className="bg-navy-900 text-white" aria-label="Footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full overflow-hidden ring-2 ring-green-500/40">
-                <img src={brand.logo} alt="Jeevan Yatra Travels" className="w-full h-full object-cover" />
+            <div className="flex flex-col items-start gap-3 mb-4 sm:flex-row sm:items-center">
+              <div className="h-12 w-32 overflow-hidden rounded-2xl bg-white px-0 py-0 ring-2 ring-green-500/40 sm:h-14 sm:w-44">
+                <img src={brand.logo} alt="Jeevan Yatra Travels" className="w-full h-full scale-[1.38] object-contain object-center" />
               </div>
               <div>
                 <div className="font-display font-900 text-lg">
@@ -45,21 +53,35 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="w-9 h-9 bg-green-500/20 hover:bg-green-500 text-green-400 hover:text-white rounded-full flex items-center justify-center transition-all duration-200 text-sm"
                 aria-label="WhatsApp"
-              >💬</a>
+              >
+                💬
+              </a>
               <a
                 href={`tel:${brand.phone}`}
                 className="w-9 h-9 bg-navy-600/40 hover:bg-navy-600 text-white/60 hover:text-white rounded-full flex items-center justify-center transition-all duration-200 text-sm"
                 aria-label="Phone"
-              >📞</a>
+              >
+                📞
+              </a>
               <a
                 href={`mailto:${brand.email}`}
                 className="w-9 h-9 bg-navy-600/40 hover:bg-navy-600 text-white/60 hover:text-white rounded-full flex items-center justify-center transition-all duration-200 text-sm"
                 aria-label="Email"
-              >📧</a>
+              >
+                📧
+              </a>
+              <a
+                href={brand.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 bg-pink-500/20 hover:bg-pink-500 text-pink-300 hover:text-white rounded-full flex items-center justify-center transition-all duration-200"
+                aria-label="Instagram"
+              >
+                <InstagramIcon />
+              </a>
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="font-display font-700 text-white text-sm uppercase tracking-widest mb-4">Quick Links</h3>
             <ul className="flex flex-col gap-2">
@@ -76,7 +98,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
           <div>
             <h3 className="font-display font-700 text-white text-sm uppercase tracking-widest mb-4">Contact Info</h3>
             <ul className="flex flex-col gap-3">
@@ -116,10 +137,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="h-px bg-white/10 mb-6" />
 
-        {/* Bottom */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-body text-white/30 text-xs text-center">
             © {year} Jeevan Yatra Travels. All rights reserved. | Palanpur, Gujarat

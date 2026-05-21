@@ -3,15 +3,16 @@
 // All website content managed from this single file
 // ============================================================
 
-import logoImg from '../assets/images/logo.jpeg'
-import heroDesktop from '../assets/images/hero-desktop.png'
-import heroMobile from '../assets/images/hero-mobile.png'
+import logoImg from '../assets/images/logo-2026.jpeg'
+import heroDesktop from '../assets/images/hero-desktop-2026.png'
+import heroMobile from '../assets/images/hero-mobile-2026.jpeg'
 import swiftImg from '../assets/images/swift.jpeg'
 import balenoImg from '../assets/images/baleno.jpeg'
 import i20Img from '../assets/images/i20.jpeg'
 import venueImg from '../assets/images/venue.jpeg'
 import ertigaImg from '../assets/images/ertiga.jpeg'
 import carensImg from '../assets/images/carens.jpeg'
+import magniteImg from '../assets/images/magnite.png'
 
 // ─── Brand ──────────────────────────────────────────────────
 export const brand = {
@@ -21,6 +22,7 @@ export const brand = {
   phone: '+919104566024',
   phoneDisplay: '+91 91045 66024',
   whatsapp: '919104566024',
+  instagram: 'https://www.instagram.com/jeevanyatra_selfdrive?igsh=MTM1ajZmZDRua2NpYQ==',
   email: 'jeevanyatratravels@gmail.com',
   location: 'Palanpur, Gujarat',
   colors: {
@@ -99,6 +101,19 @@ export const fleet = {
           description:
             'Compact SUV offering a smooth, stylish ride. Perfect for both city driving and highway journeys.',
           features: ['5 Seats', 'Sunroof', 'AC', 'Touchscreen'],
+          accentColor: '#1B2B5E',
+          btnGradient: 'from-navy-600 to-navy-800',
+        },
+        {
+          id: 'magnite',
+          name: 'Nissan Magnite',
+          image: magniteImg,
+          seats: '5 Seater',
+          tag: 'Bold SUV',
+          tagColor: 'bg-red-500',
+          description:
+            'Stylish compact SUV with a commanding road presence and comfortable cabin, ideal for both city drives and weekend escapes.',
+          features: ['5 Seats', 'AC', 'SUV Stance', 'Touchscreen'],
           accentColor: '#1B2B5E',
           btnGradient: 'from-navy-600 to-navy-800',
         },
@@ -333,6 +348,105 @@ export const faqs = {
 }
 
 // ─── Contact ─────────────────────────────────────────────────
+export const terms = {
+  heading: 'Terms & Conditions',
+  subheading: 'Important rental rules, eligibility, and responsibilities before booking your vehicle.',
+  intro:
+    'By booking or using a vehicle from Jeevan Yatra Travels, the renter agrees to follow the rental policies below. These terms are intended to set clear expectations around booking, vehicle use, payments, and liability during the rental period.',
+  items: [
+    {
+      id: 1,
+      title: 'Definitions',
+      points: [
+        '"Jeevan Yatra Travels" refers to the self-drive car rental service provider and its booking channels.',
+        '"Renter" means the customer, driver, or person taking the vehicle on rent and accepting these terms.',
+        '"Vehicle" means the rented car together with its keys, documents, accessories, and supplied equipment.',
+      ],
+    },
+    {
+      id: 2,
+      title: 'Eligibility & Required Documents',
+      points: [
+        'The renter must hold a valid driving license and provide any identification or address proof requested at the time of booking or vehicle handover.',
+        'Only the approved renter or approved driver may drive the vehicle unless written approval is given by Jeevan Yatra Travels.',
+        'Bookings may be declined if documents are incomplete, invalid, mismatched, or fail verification.',
+      ],
+    },
+    {
+      id: 3,
+      title: 'Booking Confirmation',
+      points: [
+        'A booking is considered confirmed only after availability is approved and any required advance payment or deposit is received.',
+        'Vehicle category, timing, pricing, and pickup details are subject to confirmation at the time of booking.',
+        'Jeevan Yatra Travels reserves the right to substitute a similar vehicle if the reserved model becomes unavailable due to maintenance, delay, or operational reasons.',
+      ],
+    },
+    {
+      id: 4,
+      title: 'Vehicle Use & Driver Responsibility',
+      points: [
+        'The renter must operate the vehicle carefully and follow all traffic laws, parking rules, and local regulations.',
+        'The vehicle must not be used for racing, overloading, towing, transporting illegal goods, or any unlawful activity.',
+        'The renter is responsible for keeping the vehicle secure, using the correct fuel, and returning all keys, documents, and accessories received at handover.',
+      ],
+    },
+    {
+      id: 5,
+      title: 'Condition, Fuel & Cleanliness',
+      points: [
+        'The renter should inspect the vehicle at pickup and report visible damage, warning lights, or issues before leaving.',
+        'The vehicle must be returned in reasonably clean condition and with the agreed fuel level.',
+        'Extra cleaning, refuelling, or misuse-related charges may apply if the vehicle is returned excessively dirty or below the agreed fuel level.',
+      ],
+    },
+    {
+      id: 6,
+      title: 'Accidents, Damage & Traffic Fines',
+      points: [
+        'Any accident, damage, theft, breakdown, or police matter must be reported to Jeevan Yatra Travels immediately.',
+        'The renter remains responsible for fines, tolls, challans, parking charges, and penalties incurred during the rental period.',
+        'Damage caused by negligence, policy violation, drunk driving, or unauthorized use may be fully recoverable from the renter.',
+      ],
+    },
+    {
+      id: 7,
+      title: 'Payments & Security Deposit',
+      points: [
+        'Rental charges, delivery charges, extensions, penalties, and other applicable fees must be paid as instructed by Jeevan Yatra Travels.',
+        'A refundable security deposit may be collected to cover damage, fines, tolls, fuel shortage, late return, or other unpaid dues.',
+        'Deposit release timelines may depend on pending traffic violations, damage review, and payment settlement.',
+      ],
+    },
+    {
+      id: 8,
+      title: 'Extensions, Late Return & Cancellation',
+      points: [
+        'Any extension request must be approved before the original return time. Extensions are subject to availability and revised charges.',
+        'Late return without approval may attract additional rental, penalty, or recovery charges.',
+        'Cancellation and refund handling may vary depending on booking stage, vehicle blocking, and operational commitments.',
+      ],
+    },
+    {
+      id: 9,
+      title: 'Right to Refuse or End Rental',
+      points: [
+        'Jeevan Yatra Travels may refuse, suspend, or terminate a booking if the renter violates terms, provides false information, or uses the vehicle unsafely.',
+        'The company may request return of the vehicle immediately if continued use creates legal, mechanical, safety, or recovery risk.',
+        'Non-compliance with return instructions may lead to repossession or legal recovery actions where permitted by law.',
+      ],
+    },
+    {
+      id: 10,
+      title: 'General',
+      points: [
+        'All bookings are subject to vehicle availability, operational feasibility, and verification clearance.',
+        'Rates, policies, and requirements may be updated from time to time without prior notice.',
+        'For booking-specific clarification, renters should confirm applicable terms directly with Jeevan Yatra Travels before pickup.',
+      ],
+    },
+  ],
+}
+
 export const contact = {
   heading: 'Ready to Start Your Journey?',
   subheading:

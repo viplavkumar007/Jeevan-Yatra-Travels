@@ -5,12 +5,18 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     font-family: 'Nunito', sans-serif;
     background-color: #f8fafc;
     color: #1a1a2e;
+    overflow-x: hidden;
+  }
+
+  #root {
+    width: 100%;
     overflow-x: hidden;
   }
 

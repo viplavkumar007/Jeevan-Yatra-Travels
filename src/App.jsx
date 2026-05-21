@@ -4,8 +4,10 @@ import Hero from './sections/Hero'
 import Fleet from './sections/Fleet'
 import Services from './sections/Services'
 import About from './sections/About'
+import PromoShowcase from './sections/PromoShowcase'
 import Testimonials from './sections/Testimonials'
 import FAQ from './sections/FAQ'
+import Terms from './sections/Terms'
 import Contact from './sections/Contact'
 import CTAStrip from './components/CTAStrip'
 import Footer from './components/Footer'
@@ -38,14 +40,16 @@ export default function App() {
 
       <Navbar />
 
-      <main id="main-content">
+      <main id="main-content" className="pt-[84px] md:pt-[92px]">
         <Hero />
         <Fleet />
         <Services />
         <About />
+        <PromoShowcase />
         <CTAStrip />
         <Testimonials />
         <FAQ />
+        <Terms />
         <Contact onToast={addToast} />
       </main>
 
