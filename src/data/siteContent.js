@@ -4,8 +4,8 @@
 // ============================================================
 
 import logoImg from '../assets/images/logo-2026.jpeg'
-import heroDesktop from '../assets/images/hero-desktop-2026.png'
-import heroMobile from '../assets/images/hero-mobile-2026.jpeg'
+import heroDesktop from '../assets/images/hero-desktop-2026-v2.png'
+import heroMobile from '../assets/images/hero-mobile-2026-v2.png'
 import swiftImg from '../assets/images/swift.jpeg'
 import balenoImg from '../assets/images/baleno.jpeg'
 import i20Img from '../assets/images/i20.jpeg'

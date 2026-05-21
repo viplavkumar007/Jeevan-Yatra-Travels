@@ -1,6 +1,6 @@
 import { brand } from '../data/siteContent'
-import promoPage1 from '../assets/images/promo-page-1.jpeg'
-import promoPage2 from '../assets/images/promo-page-2.jpeg'
+import promoPage1 from '../assets/images/promo-page-1-2026.png'
+import promoPage2 from '../assets/images/promo-page-2-2026.png'
 
 const promoImages = [
   {
